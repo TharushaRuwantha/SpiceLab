@@ -31,6 +31,9 @@ app.use("/user",userRouter);
 const companyRouter = require("./routes/companies.js");
 app.use("/company",companyRouter);
 
+const farmerRouter = require("./routes/farmers.js");
+app.use("/farmer",farmerRouter);
+
 
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
