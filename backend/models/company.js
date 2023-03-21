@@ -6,7 +6,7 @@ const CompanySchema = new Schema({
         type:String,
         required :true
     },
-    passwrord:{
+    password:{
         // TODO: hash the password
         type:String,
         required :true
