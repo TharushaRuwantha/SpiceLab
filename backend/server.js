@@ -28,8 +28,6 @@ connection.once("open",()=>{
 const userRouter = require("./routes/users.js");
 app.use("/user",userRouter);
 
-const companyRouter = require("./routes/companies.js");
-app.use("/company",companyRouter);
 
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
