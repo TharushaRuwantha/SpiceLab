@@ -47,7 +47,7 @@ router.route("/update/:id").put(async(req,res)=>{
         email,
         webSite
     }
-    const update = await Company.findbyIdAndUpdate(companyId,updateCompany).then(()=>{
+    const update = await Company.findByIdAndUpdate(companyId,updateCompany).then(()=>{
         res.status(200).send({status:"Company updated"}).catch((err)=>{
             console.log(err);
             res.status(500).send({status:"Error with updating data",error: err.message});
