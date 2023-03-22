@@ -1,7 +1,8 @@
-const router = require("express").Router();
+
+const Company = require("../models/company");
 let Farmer = require("../models/farmer");
 
-//add new farmer
+
 router.route("/add").post((req,res)=>{
     const fullname = req.body.fullname;
     const password = req.body.password;
@@ -28,7 +29,9 @@ router.route("/add").post((req,res)=>{
     })
     
 })
-//get all farmers
+
+
+
 router.route("/").get((req,res)=>{
     Farmer.find().then((farmers)=>{
         res.json(farmers)
@@ -37,7 +40,8 @@ router.route("/").get((req,res)=>{
     })
 })
 
-//update farmer by using id
+
+
 router.route("/update/:id").put(async(req,res)=>{
     let farmerId = req.params.is;
     const {fullname,password,address,zipcode,contactnumber,email,website} =req.body;
@@ -60,7 +64,9 @@ router.route("/update/:id").put(async(req,res)=>{
         })
     })
 })
-//delete farmer by id
+
+
+
 router.route("/delete/:id").delete(async(req,res)=>{
     let farmerId = req.params.is;
     await Farmer.findByIdAndDelete(farmerId).then(()=>{
@@ -72,7 +78,8 @@ router.route("/delete/:id").delete(async(req,res)=>{
 
     })  
 })
-// get farmer by id
+
+
 router.route("/get/:id").get(async(req,res)=>{
     let farmerId = req.params.is;
     const farmer = await Farmer.findById(farmerId).then((farmer)=>{

@@ -18,12 +18,12 @@ const farmerSchema = new Schema({
         require :true
     },
 
-    contactnumber:{
+    zipcode :{
         type : String,
         require : true
     },
 
-    zipcode :{
+    contactnumber:{
         type : String,
         require : true
     },
