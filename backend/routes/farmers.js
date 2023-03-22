@@ -2,6 +2,7 @@ const router = require("express").Router();
 const Company = require("../models/company");
 let Farmer = require("../models/farmer");
 
+
 router.route("/add").post((req,res)=>{
     const fullname = req.body.fullname;
     const password = req.body.password;
@@ -29,6 +30,8 @@ router.route("/add").post((req,res)=>{
     
 })
 
+
+
 router.route("/").get((req,res)=>{
     Farmer.find().then((farmers)=>{
         res.json(farmers)
@@ -36,6 +39,8 @@ router.route("/").get((req,res)=>{
         console.log(err);
     })
 })
+
+
 
 router.route("/update/:id").put(async(req,res)=>{
     let farmerId = req.params.is;
@@ -60,6 +65,8 @@ router.route("/update/:id").put(async(req,res)=>{
     })
 })
 
+
+
 router.route("/delete/:id").delete(async(req,res)=>{
     let farmerId = req.params.is;
     await Farmer.findByIdAndDelete(farmerId).then(()=>{
@@ -71,6 +78,7 @@ router.route("/delete/:id").delete(async(req,res)=>{
 
     })  
 })
+
 
 router.route("/get/:id").get(async(req,res)=>{
     let farmerId = req.params.is;
