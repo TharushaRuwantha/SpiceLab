@@ -1,4 +1,4 @@
-const router = require("Express").Router();
+const router = require("express").Router();
 let Company = require("../models/company");
 
 router.route("/add").post((req,res)=>{
