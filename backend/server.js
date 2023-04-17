@@ -42,7 +42,9 @@ const expenditureRouter = require("./routes/Expenditures.js");
 
 app.use("/expenditure",expenditureRouter);
 
+const incomeRouter = require("./routes/Incomes.js");
 
+app.use("/incomes",incomeRouter);
 
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
