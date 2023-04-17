@@ -85,6 +85,7 @@ router.route("/delete/:id").delete(async(req,res) =>{
         //Show erre msg in frontend
         res.status(500).send({status:"Error with delete data",error:err.message});
     })
+})
 
     //get details from oneuser
     router.route("/get/:id").delete(async(req,res) =>{
