@@ -38,6 +38,10 @@ app.use("/request",requestRouter);
 const farmerRouter = require("./routes/farmers.js");
 app.use("/farmer",farmerRouter);
 
+const expenditureRouter = require("./routes/Expenditures.js");
+
+app.use("/expenditure",expenditureRouter);
+
 
 
 app.listen(PORT,()=>{
