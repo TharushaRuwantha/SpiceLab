@@ -84,25 +84,19 @@ router.route("/get/:id").get(async (req, res) => {
     })
 })
 
-//This code segment use to extract specific jason object from String array
-//In this case it's extract all the salary values from every jason object, and getting the Total value by Addition.
-//After that it will pass the value to the client side.
+// This route retrieves all expenditure items from the database,
+//sums up their vamount values, and returns the total as a JSON object.
 
-router.route("/expenditures").get((req,res) => {
-
-    Expenditure.find().then((expenditures) =>{
-
-        let total_expenditures = 0;
-
-        for (let i = 0; i < expenditures.length; i++) {
-            total_expenditures += parseInt(expenditures[i].salary);
-        }
-
-        res.json(total_expenditures);
-        
-    }).catch((err)=>{
-        console.log(err)
+router.route("/expenditures").get((req, res) => {
+    Expenditure.find().then((expenditures) => {
+      let total_expenditures = 0;
+      for (let i = 0; i < expenditures.length; i++) {
+        total_expenditures += parseInt(expenditures[i].vamount.replace(',', ''));
+      }
+      res.json(total_expenditures);
+    }).catch((err) => {
+      console.log(err)
     })
-})
+  })
 
 module.exports = router;
