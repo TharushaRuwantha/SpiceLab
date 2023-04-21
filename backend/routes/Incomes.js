@@ -87,7 +87,19 @@ router.route("/get/:id").get(async (req, res) => {
     })
 })
 
+
 //This code segment use to extract specific jason object from String array
+/**
+ * This API endpoint retrieves all income records from the database,
+ * calculates the total income by summing up the 'pamount' values from each record,
+ * and sends the result as a JSON response. 
+ * 
+ * HTTP method: GET
+ * Endpoint: /incomes/totalincome
+ * Response format: JSON
+ * Note that I also added .replace(/,/g, "") to remove commas from the pamount string before parsing it as an integer.
+ * Example response: {"total_income": 30295427}
+ */
 
 router.route("/totalincome").get((req,res) => {
 
@@ -96,7 +108,7 @@ router.route("/totalincome").get((req,res) => {
         let total_incomes = 0;
 
         for (let i = 0; i < incomes.length; i++) {
-            total_incomes += parseInt(incomes[i].value);
+            total_incomes += parseInt(incomes[i].pamount.replace(/,/g, ""));
         }
 
         res.json(total_incomes);
