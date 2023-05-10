@@ -1,0 +1,19 @@
+.footermain{
+    background-color: #4D1003;
+    position: absolute;
+    bottom: 0px;
+    color: aliceblue; 
+    justify-content: center;
+    text-align: center;
+}
+
+.footerLinkCol{
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+.footerContactCol{
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
