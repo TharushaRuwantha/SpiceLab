@@ -1,0 +1,57 @@
+.RegistationContainer{
+    background-color: rgb(255, 255, 255);
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+.TabBar{
+    background-color: #D9D9D9;
+}
+.topicBar{
+    padding:20px
+}
+.tabButton{
+    padding:10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.form{
+    padding: 50px;
+}
+
+.continueBtn{
+    background-color:  #4D1003;
+    color: aliceblue;
+    padding-left:100px;
+    padding-right:100px;
+    
+}
+
+.ContinueBtn{
+    text-align: right;
+}
+
+.continueBtn:hover{
+    background-color: #521f12;
+    font-weight: bold;
+}
+.formText{
+
+}
+
+.tabButton.selected {
+  background-color: #444444;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
