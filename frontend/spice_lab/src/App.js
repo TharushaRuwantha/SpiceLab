@@ -4,6 +4,8 @@ import Footer from './Components/footerComponent/footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Navbar from './Components/navbarComponent/navbar';
+import EditItemsPage from './Components/edititemspageComponent/edititemspage';
+
 function App() {
   return (
     <Router>
@@ -15,7 +17,8 @@ function App() {
 
         
         <Routes>
-          <Route path="/register" element={<Register/>}/>         
+          <Route path="/register" element={<Register/>}/>     
+          <Route path="/edititemspage" element={<EditItemsPage/>}/>    
         </Routes>
 
 
