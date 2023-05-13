@@ -1,7 +1,5 @@
 .footermain{
-    background-color: #4D1003;
-    position: absolute;
-    bottom: 0px;
+    background-color: #4D1003; 
     color: aliceblue; 
     justify-content: center;
     text-align: center;
@@ -17,3 +15,5 @@
     margin-bottom: auto;
 
 }
+
+
