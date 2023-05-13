@@ -7,7 +7,7 @@ function EditItemsPageUpPart(){
             <div className="row ">
                 <div className="col-sm-1"></div>
 
-                <div className="col-sm-10 edititemspage">
+                <div className="col-sm-10 edititemspageuppart">
                     <div className="edititemspagetopic">Add New Items</div>
                 </div>
 
