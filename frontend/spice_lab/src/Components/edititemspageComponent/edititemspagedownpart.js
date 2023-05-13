@@ -18,10 +18,10 @@ function EditItemsPageDownPart(){
 
                         <div className="col-sm-10 edititemspagedownpartA">
                             <div className="row">
-                                <div className="col-sm-4 makann">
+                                <div className="col-sm-4">
                                     <img src={itemimg}  className="imgstyle"/>
                                 </div>
-                                <div className="col-sm-1 makann">
+                                <div className="col-sm-1">
                                     
                                 </div>
                                 <div className="col-sm-7 ">
@@ -45,7 +45,7 @@ function EditItemsPageDownPart(){
                                     </div>
                                     <div className="row editpagespace">
                                         <div className="col-sm-12 editpagefont ">Description</div>
-                                        <textarea className="form-controlNY editpagespaceA" placeholder=" example (Pvt) Ltd" required></textarea>  
+                                        <textarea className="form-controlNY editpagespaceA" placeholder=" example Description" required></textarea>  
                                     </div>
                                     <div className="row editpagespace">
                                         <div className="col-sm-6"></div>
@@ -60,11 +60,15 @@ function EditItemsPageDownPart(){
                             </div>
                         </div>
 
-                        <div className="col-sm-1"></div>  
+                        <div className="col-sm-1 "></div>  
                     </div>
+                    <div className="underpart"></div>
                 </div>
 
                 <div className="col-sm-1"></div>  
+            </div>
+            <div className="row underpart">
+                
             </div>
         </div>
     );
