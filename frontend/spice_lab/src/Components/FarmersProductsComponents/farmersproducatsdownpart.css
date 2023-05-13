@@ -1,0 +1,27 @@
+
+
+.outborderA{
+    margin-top: 25px;
+}
+
+.outborderB{
+    border: 1px solid black;
+    margin-top: 1px;
+    background-color: rgb(255, 255, 255);
+}
+
+.textA{
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.outborderC{
+    margin-top: 50px;
+}
+
+.textB{
+    font-weight: 600;
+    
+}
+
+  
