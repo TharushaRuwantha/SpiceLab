@@ -1,7 +1,9 @@
+
 .edititemspagedownpart{
     
     border: 1px solid black;
     margin-top: 30px;
+    background-color: rgb(255, 255, 255);
     
     
     
@@ -14,4 +16,32 @@
 
 .makann{
     border: 1px solid black;
+}
+
+.imgstyle{
+    width : 100%;
+    height : auto
+}
+
+.editpagefont{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form-controlNY{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 350px;
+   
+}
+
+.editpagespace{
+    margin-top: 33px;
+}
+
+.editpagespaceA{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 535px;
+    height: 100px;
 }
