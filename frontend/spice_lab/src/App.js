@@ -6,11 +6,12 @@ function App() {
   return (
     <Router>
       <div>
-        <Footer/>
+      
         
         <Routes>
           <Route path="/register" element={<Register/>}/>        
         </Routes>
+        <Footer/>
       </div>
       </Router>
     
