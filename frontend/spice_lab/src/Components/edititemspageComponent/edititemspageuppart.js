@@ -8,7 +8,7 @@ function EditItemsPageUpPart(){
                 <div className="col-sm-1"></div>
 
                 <div className="col-sm-10 edititemspageuppart">
-                    <div className="edititemspagetopic">Add New Items</div>
+                    <div className="edititemspagetopic">Edit Items</div>
                 </div>
 
                 <div className="col-sm-1"></div>  
