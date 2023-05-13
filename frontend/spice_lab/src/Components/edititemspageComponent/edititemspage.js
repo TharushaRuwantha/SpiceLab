@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "../edititemspageComponent/edititemspage.css";
 
 import EditItemsPageUpPart from "./edititemspageuppart";
+import EditItemsPageDownPart from "./edititemspagedownpart";
 
 function EditItemsPage(){
     return(
@@ -9,7 +10,9 @@ function EditItemsPage(){
             <div>
                 <EditItemsPageUpPart/>
             </div>
-            <div>yashmi</div>
+            <div>
+                <EditItemsPageDownPart/> 
+            </div>
         </div>
     );
 }
