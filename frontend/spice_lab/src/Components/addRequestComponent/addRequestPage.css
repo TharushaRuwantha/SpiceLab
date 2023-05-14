@@ -1,0 +1,38 @@
+.Topic-Text{
+    margin: 50px;
+    color: #4D1003;
+}
+
+.checkbox{
+    margin-left: 15px;
+    
+}
+
+/* Error messages */
+.undertextCategory{
+    visibility: hidden;
+}
+.undertextAmount{
+    visibility: hidden;
+}
+
+.undertextAddress{
+    visibility: hidden;
+}
+.Postbtnrow{
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+.Postbtn{
+    background-color: #4D1003;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.checkboxrow{
+    justify-content: center;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
