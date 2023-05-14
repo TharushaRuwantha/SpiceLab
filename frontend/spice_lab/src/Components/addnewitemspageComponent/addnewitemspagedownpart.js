@@ -16,8 +16,15 @@ function AddNewItemsPageDownPart(){
 
                         <div className="col-sm-10 addnewitemspagedownpartA">
                             <div className="row">
+
                                 <div className="col-sm-4">
-                                    {/* <img src={itemimg}  className="imgstyle"/> */}
+                                    <div className="imgstyle imgstylemargin">
+                                        <center>
+                                            <div className="imgstylespace">
+                                                <Button variant="outlined"><input id="multiplefileupload" type="file" accept=".jpg,.gif,.png" multiple  /></Button>
+                                            </div>
+                                        </center>
+                                    </div>
                                 </div>
                                 <div className="col-sm-1">
                                     
@@ -26,24 +33,24 @@ function AddNewItemsPageDownPart(){
                                     <div className="row">
                                         <div className="col-sm-4 addnewitemspagefont ">Full Name</div>
                                         <div className="col-sm-8 ">
-                                            <input type="text" class="form-controlNYaddnewitems" placeholder=" example Mr.Lasitha Perera" required/>
+                                            <input type="text" class="form-controlNYaddnewitems" placeholder=" Type here" required/>
                                         </div>
                                     </div>
                                     <div className="row addpagespace">
                                         <div className="col-sm-4 addnewitemspagefont ">Weight</div>
                                         <div className="col-sm-8 ">
-                                            <input type="text" class="form-controlNYaddnewitems" placeholder=" example KG" required/>
+                                            <input type="text" class="form-controlNYaddnewitems" placeholder="Type here" required/>
                                         </div>
                                     </div>
                                     <div className="row addpagespace">
                                         <div className="col-sm-4 addnewitemspagefont">Price</div>
                                         <div className="col-sm-8 ">
-                                            <input type="text" class="form-controlNYaddnewitems" placeholder=" example $100" required/>
+                                            <input type="text" class="form-controlNYaddnewitems" placeholder="Type here" required/>
                                         </div>
                                     </div>
                                     <div className="row addpagespace">
                                         <div className="col-sm-12 addnewitemspagefont ">Description</div>
-                                        <textarea className="form-controlNYaddnewitems addpagespaceA" placeholder=" example Description" required></textarea>  
+                                        <textarea className="form-controlNYaddnewitems addpagespaceA" placeholder="Type here" required></textarea>  
                                     </div>
                                     <div className="row addpagespace">
                                         <div className="col-sm-6"></div>
@@ -51,7 +58,7 @@ function AddNewItemsPageDownPart(){
                                             <center><Button variant="contained" style={{backgroundColor: '#4D1003', color: 'white', width: '100px'}}>Cancel</Button></center>
                                         </div> 
                                         <div className="col-sm-3">
-                                            <center><Button variant="contained" style={{backgroundColor: '#4D1003', color: 'white', width: '100px'}}>Save</Button></center>
+                                            <center><Button variant="contained" style={{backgroundColor: '#4D1003', color: 'white', width: '100px'}}>Finish</Button></center>
                                         </div> 
                                     </div>
                                 </div>
