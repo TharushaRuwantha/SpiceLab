@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/navbarComponent/navbar';
 import FarmersProducts from './Components/FarmersProductsComponents/farmersproducts';
 import EditItemsPage from './Components/edititemspageComponent/edititemspage';
+import ProductsSummaryPage from './Components/productssummarypageComponent/productssummarypage';
+
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
         <Routes>
           <Route path="/register" element={<Register/>}/>    
           <Route path="/farmersproducts" element={<FarmersProducts/>}/>         
-          <Route path="/edititemspage" element={<EditItemsPage/>}/>    
+          <Route path="/edititemspage" element={<EditItemsPage/>}/> 
+          <Route path="/productssummary" element={<ProductsSummaryPage/>}/> 
+            
         </Routes>
         <Footer/>
       </div>
