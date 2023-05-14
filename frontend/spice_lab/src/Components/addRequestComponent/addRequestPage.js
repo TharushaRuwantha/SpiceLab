@@ -49,21 +49,20 @@ function AddRequest(){
                      
                      <label for="exampleFormControlTextarea1">Other Notes</label>
                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                     <div id="emailHelp" class="form-text undertextAddress">error in Address</div>
+                     <div id="emailHelp" class="form-text undertextAddress">error in other note</div>
              
 
                 </div>
                 <div className="col-md-6">
                      <label for="exampleInputEmail1" class="form-label">Zip Code</label>
                      <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-                     <div id="emailHelp" class="form-text undertextAmount">error in Amount</div>
+                     <div id="emailHelp" class="form-text undertextAmount">error in zip code</div>
                 </div>
                 
             </div>
             <div className="row">
-                <div className="Postbtnrow container-fluid">
+            <div className="Postbtnrow container-fluid">
                     <button type="submit" class="Postbtn btn btn-primary ">Post</button>
-
                 </div>
             </div>
             </form>
