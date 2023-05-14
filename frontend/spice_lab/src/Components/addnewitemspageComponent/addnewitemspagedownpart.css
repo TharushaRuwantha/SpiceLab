@@ -1,5 +1,5 @@
 
-.edititemspagedownpart{
+.addnewitemspagedownpart{
     
     border: 1px solid black;
     margin-top: 20px;
@@ -9,7 +9,7 @@
     
 }
 
-.edititemspagedownpartA{
+.addnewitemspagedownpartA{
     
     margin-top: 30px;
 }
@@ -23,29 +23,39 @@
     height : 400px
 }
 
-.editpagefont{
-    font-size: 18px;
-    font-weight: 600;
+.imgstylemargin{
+    border: 1px solid black;
 }
 
-.form-controlNY{
+.imgstylespace{
+    margin-top: 150px;
+}
+
+.addnewitemspagefont{
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+.form-controlNYaddnewitems{
     border: 1px solid black;
     border-radius: 5px;
     width: 350px;
+    
    
 }
 
-.editpagespace{
+.addpagespace{
     margin-top: 33px;
 }
 
-.editpagespaceA{
+.addpagespaceA{
     margin-top: 20px;
     margin-left: 10px;
     width: 535px;
     height: 100px;
 }
 
-.underpart{
+.underpartaddpage{
     margin-top: 30px;
 }

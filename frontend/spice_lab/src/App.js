@@ -2,10 +2,13 @@ import './App.css';
 import Register from './Components/RegistrationForm/registrationPage';
 import Footer from './Components/footerComponent/footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import Navbar from './Components/navbarComponent/navbar';
 import FarmersProducts from './Components/FarmersProductsComponents/farmersproducts';
 import EditItemsPage from './Components/edititemspageComponent/edititemspage';
 import AddRequest from './Components/addRequestComponent/addRequestPage';
+import AddNewItemsPage from './Components/addnewitemspageComponent/addnewitemspage';
+
 
 function App() {
   return (
@@ -14,9 +17,10 @@ function App() {
         <Navbar/> 
         <Routes>
           <Route path="/register" element={<Register/>}/>    
-          <Route path="/farmersproducts" element={<FarmersProducts/>}/>         
-          <Route path="/edititemspage" element={<EditItemsPage/>}/>    
+          <Route path="/farmersproducts" element={<FarmersProducts/>}/>            
           <Route path="/addrequest" element={<AddRequest/>}/> 
+          <Route path="/edititemspage" element={<EditItemsPage/>}/>   
+          <Route path="/addnewitemspage" element={<AddNewItemsPage/>}/> 
         </Routes>
         <Footer/>
       </div>
