@@ -21,7 +21,7 @@ function AddNewItemsPageDownPart(){
                                     <div className="imgstyle imgstylemargin">
                                         <center>
                                             <div className="imgstylespace">
-                                                <Button variant="outlined"><input id="multiplefileupload" type="file" accept=".jpg,.gif,.png" multiple  /></Button>
+                                                <Button variant="outlined" style={{ borderColor: '#000000'}}><input id="multiplefileupload" type="file" accept=".jpg,.gif,.png" multiple  /></Button>
                                             </div>
                                         </center>
                                     </div>
