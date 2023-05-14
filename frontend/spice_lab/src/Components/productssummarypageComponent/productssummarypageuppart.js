@@ -11,9 +11,9 @@ function ProductsSummaryPageUpPart(){
 
                     <div className="row">
 
-                        <div className="col-sm-4 productssummarypagetopic maknna">Products</div>
+                        <div className="col-sm-4 productssummarypagetopic">Products</div>
 
-                        <div className="col-sm-8 productssummarypagetopic maknna">
+                        <div className="col-sm-8 productssummarypagetopic">
                             <input
                                 className="form-control me-2 searchbarA"
                                 type="search"

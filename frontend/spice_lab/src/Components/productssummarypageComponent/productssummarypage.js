@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import "../productssummarypageComponent/productssummarypage.css";
 
 import ProductsSummaryPageUpPart from "./productssummarypageuppart";
+import ProductsSummaryPageDownPart from "./productssummarypagedownpart";
 
 function ProductsSummaryPage(){
     return(
@@ -10,10 +11,10 @@ function ProductsSummaryPage(){
                 <ProductsSummaryPageUpPart/>
             </div>
             <div>
-fsfs
+                <ProductsSummaryPageDownPart/>
             </div>
             <div>
-sfsf
+
             </div>
         </div>
     );
