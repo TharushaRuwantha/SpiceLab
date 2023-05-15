@@ -9,7 +9,7 @@ function ProfileEditPage(){
                 <ProfileEditLeftSide/>
             </div>
             <div>
-                mdfdmfs
+                nawnajana
             </div>
         </div>
     );

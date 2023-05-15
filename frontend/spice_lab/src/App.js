@@ -21,12 +21,7 @@ function App() {
         <Navbar/> 
         <Routes>
           <Route path="/register" element={<Register/>}/>    
-
-                
-         
           <Route path="/productssummary" element={<ProductsSummaryPage/>}/> 
-            
-
           <Route path="/farmersproducts" element={<FarmersProducts/>}/>            
           <Route path="/addrequest" element={<AddRequest/>}/> 
           <Route path="/edititemspage" element={<EditItemsPage/>}/>   
