@@ -11,7 +11,7 @@ function ProductsSummaryPageUpPart(){
 
                     <div className="row">
 
-                        <div className="col-sm-4 productssummarypagetopic">Products</div>
+                        <div className="col-sm-4 productssummarypagetopic">Products Summary</div>
 
                         <div className="col-sm-8 productssummarypagetopic">
                             <input
