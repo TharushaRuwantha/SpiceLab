@@ -8,7 +8,8 @@ import FarmersProducts from './Components/FarmersProductsComponents/farmersprodu
 import EditItemsPage from './Components/edititemspageComponent/edititemspage';
 import AddRequest from './Components/addRequestComponent/addRequestPage';
 import AddNewItemsPage from './Components/addnewitemspageComponent/addnewitemspage';
-
+import BuyingRequest from './Components/buyingRequest/BuyingRequestPage';
+import EditBuyingReq from './Components/editBuyingReqPage/editBuyingPage';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
           <Route path="/addrequest" element={<AddRequest/>}/> 
           <Route path="/edititemspage" element={<EditItemsPage/>}/>   
           <Route path="/addnewitemspage" element={<AddNewItemsPage/>}/> 
+          <Route path="/buyingrequest" element={<BuyingRequest/>}/>
+          <Route path="/editbuyingpage" element={<EditBuyingReq/>}/>
         </Routes>
         <Footer/>
       </div>

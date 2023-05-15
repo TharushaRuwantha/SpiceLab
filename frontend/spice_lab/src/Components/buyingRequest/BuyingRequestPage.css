@@ -1,0 +1,42 @@
+.Topic-Text{
+    margin: 50px;
+    color: #4D1003;
+}
+.add-button{
+    margin: 50px;
+    width: 100px;
+    border-radius: 5px;
+    color: #4D1003;
+    font-size: large;
+    font-weight: bold;
+    border: 2px solid #4D1003;
+    background-color: transparent;
+}
+
+.add-button:hover{
+    background-color:#4D1003;
+    color: white;
+}
+
+.savebtn{
+    width:100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid #4D1003 ;
+    color: #4D1003;
+    justify-content: center;
+    text-align: center;
+}
+
+.savebtn:hover{
+    background-color: #4D1003;
+    color: white;
+
+}
+
+.listRow{
+    margin: 10px;
+  
+}
+
