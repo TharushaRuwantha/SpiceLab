@@ -9,7 +9,10 @@ function ProfileEditPage(){
                 <ProfileEditLeftSide/>
             </div>
             <div>
-                nawnajana
+               
+            </div>
+            <div className="profileeditmainunderpart">
+               
             </div>
         </div>
     );

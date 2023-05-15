@@ -49,9 +49,9 @@ function ProfileEditLeftSide(){
                     </div>
 
                 </div>
-                <div className="col-sm-1 makanna"></div>
-                <div className="col-sm-6 makanna"></div>
-                <div className="col-sm-1 makanna"></div>
+                
+                <div className="col-sm-7 "></div>
+                <div className="col-sm-1"></div>
 
             </div>
         </div>
