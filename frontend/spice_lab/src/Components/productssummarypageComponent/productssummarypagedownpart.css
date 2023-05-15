@@ -1,0 +1,36 @@
+.productssummarypagedownpart{
+    margin-top: 40px;
+
+}
+
+.productssummarypagedownpartcolour{
+    background-color: rgb(255, 255, 255);
+}
+
+.tableborderA{
+    border: 1px solid black;
+    
+}
+
+.productssummarypagetextA{
+   
+    font-weight: 500;
+}
+
+.productssummarypagetextB{
+    font-weight: bold;
+    font-size: 16px;
+    
+    
+}
+
+
+
+.productsammeryunderpartA{
+    margin-top: 50px;
+}
+
+.productsammeryunderpartB{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}

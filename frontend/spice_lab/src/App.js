@@ -6,8 +6,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/navbarComponent/navbar';
 import FarmersProducts from './Components/FarmersProductsComponents/farmersproducts';
 import EditItemsPage from './Components/edititemspageComponent/edititemspage';
+
+import ProductsSummaryPage from './Components/productssummarypageComponent/productssummarypage';
 import AddRequest from './Components/addRequestComponent/addRequestPage';
 import AddNewItemsPage from './Components/addnewitemspageComponent/addnewitemspage';
+
 
 
 function App() {
@@ -17,10 +20,17 @@ function App() {
         <Navbar/> 
         <Routes>
           <Route path="/register" element={<Register/>}/>    
+
+                
+         
+          <Route path="/productssummary" element={<ProductsSummaryPage/>}/> 
+            
+
           <Route path="/farmersproducts" element={<FarmersProducts/>}/>            
           <Route path="/addrequest" element={<AddRequest/>}/> 
           <Route path="/edititemspage" element={<EditItemsPage/>}/>   
           <Route path="/addnewitemspage" element={<AddNewItemsPage/>}/> 
+
         </Routes>
         <Footer/>
       </div>
