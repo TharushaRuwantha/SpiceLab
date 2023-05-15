@@ -1,3 +1,46 @@
 .makanna{
     border: 1px solid black;
 }
+
+.profileeditmain{   
+    margin-top: 50px;  
+}
+
+.profileeditmainleft{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
+
+.profilepageimg{
+    width: 50%;
+    height: auto;
+}
+
+.profilemainnametext{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.profilemainemailtext{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.profile_description_topic_space{
+    margin-top: 30%;
+}
+
+.profile_description_topic{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.profile_description{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.underprofile{
+    margin-bottom: 20%;
+}
