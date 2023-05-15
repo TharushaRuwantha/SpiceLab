@@ -1,14 +1,15 @@
 import React,{useState} from "react";
 import "../profileeditComponent/profileeditpage.css";
+import ProfileEditLeftSide from "./profileeditpageleftside";
 
 function ProfileEditPage(){
     return(
         <div>
             <div>
-                fndm
+                <ProfileEditLeftSide/>
             </div>
             <div>
-mdfdmfs
+                mdfdmfs
             </div>
         </div>
     );
