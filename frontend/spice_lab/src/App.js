@@ -8,6 +8,7 @@ import FarmersProducts from './Components/FarmersProductsComponents/farmersprodu
 import EditItemsPage from './Components/edititemspageComponent/edititemspage';
 import AddRequest from './Components/addRequestComponent/addRequestPage';
 import AddNewItemsPage from './Components/addnewitemspageComponent/addnewitemspage';
+import ProductHome from './Components/ProductHomeComponent/ProductHome';
 
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
           <Route path="/farmersproducts" element={<FarmersProducts/>}/>            
           <Route path="/addrequest" element={<AddRequest/>}/> 
           <Route path="/edititemspage" element={<EditItemsPage/>}/>   
-          <Route path="/addnewitemspage" element={<AddNewItemsPage/>}/> 
+          <Route path="/addnewitemspage" element={<AddNewItemsPage/>}/>
+          <Route path="/ProductHome" element={<ProductHome/>}/>  
         </Routes>
         <Footer/>
       </div>
