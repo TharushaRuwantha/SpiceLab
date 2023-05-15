@@ -11,6 +11,7 @@ import AddNewItemsPage from './Components/addnewitemspageComponent/addnewitemspa
 import ProductHome from './Components/ProductHomeComponent/ProductHome';
 import BuyingRequest from './Components/buyingRequest/BuyingRequestPage';
 import EditBuyingReq from './Components/editBuyingReqPage/editBuyingPage';
+import ProductDetail from './Components/ProductDetailComponent/ProductDetail';
 
 
 
@@ -29,6 +30,8 @@ function App() {
           <Route path="/addnewitemspage" element={<AddNewItemsPage/>}/> 
           <Route path="/buyingrequest" element={<BuyingRequest/>}/>
           <Route path="/editbuyingpage" element={<EditBuyingReq/>}/>
+          <Route path="/ProductDetail" element={<ProductDetail/>}/>  
+          
 
 
 
