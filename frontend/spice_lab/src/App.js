@@ -10,6 +10,7 @@ import EditItemsPage from './Components/edititemspageComponent/edititemspage';
 import ProductsSummaryPage from './Components/productssummarypageComponent/productssummarypage';
 import AddRequest from './Components/addRequestComponent/addRequestPage';
 import AddNewItemsPage from './Components/addnewitemspageComponent/addnewitemspage';
+import ProfileEditPage from './Components/profileeditComponent/profileeditpage';
 
 
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/addrequest" element={<AddRequest/>}/> 
           <Route path="/edititemspage" element={<EditItemsPage/>}/>   
           <Route path="/addnewitemspage" element={<AddNewItemsPage/>}/> 
+          <Route path="/profileeditpage" element={<ProfileEditPage/>}/>
 
         </Routes>
         <Footer/>
