@@ -7,8 +7,8 @@ function ProfileEditLeftSide(){
         <div>
             <div className="row profileeditmain">
 
-                <div className="col-sm-1 "></div>
-                <div className="col-sm-3  profileeditmainleft">
+                
+                <div className=" profileeditmainleft">
 
                     <div className="row">
                         <div className="col-sm-1"></div>
@@ -50,8 +50,7 @@ function ProfileEditLeftSide(){
 
                 </div>
                 
-                <div className="col-sm-7 "></div>
-                <div className="col-sm-1"></div>
+                
 
             </div>
         </div>
