@@ -54,6 +54,15 @@ function ProfileEditRightSide(){
                         </div>
                     </div>
 
+                    <div className="row rightsiderow mak">
+                        <div className="col-sm-6 ">
+                            
+                        </div>
+                        <div className="col-sm-6 ">
+                            
+                        </div>
+                    </div>
+
                     <div className="row rightside_row_two"></div>
 
                     
