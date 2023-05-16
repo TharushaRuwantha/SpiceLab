@@ -4,12 +4,16 @@ import "../profileeditComponent/profileeditpagerightside.css";
 function ProfileEditRightSide(){
     return(
         <div>
-            <div className="row profileeditmain">
+            <div className="row profileeditmainR">
 
-                <div className="col-sm-1 makanna">jdjd</div>
-                <div className="col-sm-3 makanna">jsjjs</div>
-                <div className="col-sm-7 makanna">lala</div>
-                <div className="col-sm-1 makanna">kakka</div>
+                <div className="col-sm-1 "></div>
+                <div className="col-sm-10  profileeditmainright">
+                    <div className="row">
+                        hdjd
+                    </div>
+                    {/* <div className="row underprofile"></div> */}
+                </div>
+                <div className="col-sm-1 "></div>
             </div>
         </div>
     );

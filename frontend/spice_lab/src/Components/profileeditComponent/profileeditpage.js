@@ -27,7 +27,7 @@ function ProfileEditPage(){
                     </div>
                 </div>
 
-                <div className="col-sm-1 makanna"></div>
+                <div className="col-sm-1 "></div>
 
             </div>
         </div>
