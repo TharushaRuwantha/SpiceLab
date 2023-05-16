@@ -47,6 +47,9 @@ app.use("/incomes",incomeRouter);
 const itemRouter = require("./routes/items.js");
 app.use("/item",itemRouter);
 
+const shippingRouter = require("./routes/shippings.js");
+app.use("/shipping",shippingRouter);
+
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
 })
