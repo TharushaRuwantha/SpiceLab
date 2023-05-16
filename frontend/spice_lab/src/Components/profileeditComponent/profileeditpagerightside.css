@@ -5,8 +5,42 @@
 .profileeditmainright{
     background-color: rgb(255, 255, 255);
     border: 1px solid black;
+    border-radius: 5px;
 }
 
 /* .underprofileR{
     margin-bottom: 20%;
 } */
+
+.rightside_row_one{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.rightsidetopic{
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.mak{
+    border:1px solid black;
+}
+
+.rightsiderow{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.subhead{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.editprofilepage_textbox{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 270px;
+    margin-top: 7px;
+    
+   
+}
