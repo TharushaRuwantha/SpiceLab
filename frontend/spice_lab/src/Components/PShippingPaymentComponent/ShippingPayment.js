@@ -1,76 +1,142 @@
 import './ShippingPayment.css';
-import React from "react";
-import Grid from '@mui/material/Grid';
-
-
-function ShippingPayment(){
-     return(
-
-   <div class="container text-center">
-      <div class="row align-items-center">
-
-        <div class="col">
-        <h4 class="card-title">Shipping Address</h4>
-           <div class="card">
-                <div class="card-body">
-                    <form>
-                        <div class="rg-3">
-                            <label class="form-label">Full Name</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"></input>
-                            <label class="form-label">Address</label>
-                            <input type ="address" class="form-control" id="exampleInputaddress1" ></input>
-                            <label class="form-label">Country</label>
-                            <input type ="country" class="form-control" id="exampleInputcountry" ></input>
-                            <label class="form-label">City</label>
-                            <input type ="address" class="form-control" id="exampleInputcity" ></input>
-                            <label class="form-label">Postal Code</label>
-                            <input type ="address" class="form-control" id="exampleInputpostalcode" ></input>
-                            <button type="button" class="btn">Continue</button>
-
-                        </div>
-                    </form>
-                
-
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-        <h4 class="card-title2">Payments</h4>
-           <div class="card">
-                <div class="card-body">
-                    <form>
-                        <div class="rg-3">
-                            
-                            <input type="email" class="form-control" id="exampleInputEmail1"placeholder="Email Address"></input>
-                            <br></br>
-                            <input type ="address" class="form-control" id="exampleInputaccountno" placeholder="Account No"></input>
-                            <br></br>
-                            <input type ="date" class="form-control2" id="exampleInputdate" placeholder="Date"></input>
-
-                            <input type ="cvv" class="form-control2" id="exampleInputcvv" placeholder="CVV"></input>
-                            <button type="button" class="btn2">Pay</button>
-
-
-                        </div>
-                    </form>
-                
-
-                </div>
-            </div>
-        </div>
+import React, { useState } from 'react';
+import axios from "axios";
 
 
 
-
-
-
-       
+function ShippingPayment() {
+    const [fullname, setFullname] = useState("");
+    const [address, setAddress] = useState("");
+    const [country, setCountry] = useState("");
+    const [city, setCity] = useState("");
+    const [postalcode, setPostalcode] = useState("");
+    
 
     
-        
-    </div>   
+function sendData(e) {
+    e.preventDefault();
+    
+    
+
+   
+    const newShipping = {
+        fullname,
+        address,
+        country,
+        city,
+        postalcode
+      }
+   
+
+    axios.post("http://localhost:8070/add", newShipping)
+      .then(() => {
+        alert("Shipping Address Added");
+      }).catch((err) => {
+        alert(err);
+      });
+
+}
+
+
+return (
+    <div className="container text-center">
+      <div className="row align-items-center">
+        <div className="col">
+          <h4 className="card-title">Shipping Address</h4>
+          <div className="card">
+            <div className="card-body">
+              <form onSubmit={sendData}>
+                <div className="form-group">
+                  <label className="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="name"
+                    onChange={(e) => {
+                      setFullname(e.target.value);
+                    }}
+                  />
+                  <label className="form-label">Address</label>
+                  <input
+                    type="address"
+                    className="form-control"
+                    id="exampleInputaddress1"
+                    onChange={(e) => {
+                      setAddress(e.target.value);
+                    }}
+
+                    />
+                    <label className="form-label">Country</label>
+                    <input
+                      type="country"
+                      className="form-control"
+                      id="exampleInputcountry"
+                      onChange={(e) => {
+                        setCountry(e.target.value);
+                      }}
+                    />
+
+
+                  <label className="form-label">City</label>
+                  <input
+                    type="address"
+                    className="form-control"
+                    id="exampleInputcity"
+                    onChange={(e) => {
+                      setCity(e.target.value);
+                    }}
+                  />
+                  
+                  <button type="button" className="btn">Continue</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <h4 className="card-title2">Payments</h4>
+          <div className="card">
+            <div className="card-body">
+              <form>
+                <div className="rg-3">
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="exampleInputEmail1"
+                    placeholder="Email Address"
+                  />
+                  <br />
+                  <input
+                    type="address"
+                    className="form-control"
+                    id="exampleInputaccountno"
+                    placeholder="Account No"
+                  />
+                  <br />
+                  <input
+                    type="date"
+                    className="form-control2"
+                    id="exampleInputdate"
+                    placeholder="Date"
+                  />
+                  <input
+                    type="cvv"
+                    className="form-control3"
+                    id="exampleInputcvv"
+                    placeholder="CVV"
+                  />
+                  <button type="button" className="btn2">Pay</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+                 
     </div>
+
+                           
 
 
      )
