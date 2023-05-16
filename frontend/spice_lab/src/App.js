@@ -8,10 +8,21 @@ import EditItemsPage from './Components/edititemspageComponent/edititemspage';
 import ProductsSummaryPage from './Components/productssummarypageComponent/productssummarypage';
 import AddRequest from './Components/addRequestComponent/addRequestPage';
 import AddNewItemsPage from './Components/addnewitemspageComponent/addnewitemspage';
+
+import ProfileEditPage from './Components/profileeditComponent/profileeditpage';
+
 import ProductHome from './Components/ProductHomeComponent/ProductHome';
 import BuyingRequest from './Components/buyingRequest/BuyingRequestPage';
-import EditBuyingReq from './Components/editBuyingReqPage/editBuyingPage';
+
 import ProductDetail from './Components/ProductDetailComponent/ProductDetail';
+
+import ProductAddToCart from './Components/ProductAddToCartComponent/ProductAddToCart';
+
+import ProductShoppingCart from './Components/ProductShoppingCartComponent/ProductShoppingCart';
+
+import ShippingPayment from './Components/PShippingPaymentComponent/ShippingPayment';
+
+
 
 
 
@@ -21,18 +32,28 @@ function App() {
       <div>
         <Navbar/> 
         <Routes>
-          <Route path="/register" element={<Register/>}/>
-          <Route path="/productssummary" element={<ProductsSummaryPage/>}/>
+
+          <Route path="/register" element={<Register/>}/>    
+          <Route path="/productssummary" element={<ProductsSummaryPage/>}/> 
           <Route path="/farmersproducts" element={<FarmersProducts/>}/>            
           <Route path="/addrequest" element={<AddRequest/>}/> 
           <Route path="/edititemspage" element={<EditItemsPage/>}/>  
           <Route path="/ProductHome" element={<ProductHome/>}/>  
           <Route path="/addnewitemspage" element={<AddNewItemsPage/>}/> 
+          <Route path="/profileeditpage" element={<ProfileEditPage/>}/>
           <Route path="/buyingrequest" element={<BuyingRequest/>}/>
           <Route path="/editbuyingpage" element={<EditBuyingReq/>}/>
           <Route path="/ProductDetail" element={<ProductDetail/>}/>  
           
 
+          <Route path="/ProductAddToCart" element={<ProductAddToCart/>}/>
+
+
+          <Route path="/ProductShoppingCart" element={<ProductShoppingCart/>}/>
+
+
+          <Route path="/ProductUpdateCart" element={<ProductUpdateCart/>}/>
+          <Route path="/ShippingPayment" element={<ShippingPayment/>}/>
 
 
 

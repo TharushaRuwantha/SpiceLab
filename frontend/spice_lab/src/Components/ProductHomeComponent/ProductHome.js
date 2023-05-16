@@ -3,7 +3,7 @@ import React from "react";
 import Grid from '@mui/material/Grid';
 import Cinnamon_image from '../../images/cinnamon.jpeg';
 import tamarind_image from '../../images/tamarind.png';
-// import chili_image from '../images/chili.jpg';
+import chili_image from '../../images/chili.jpg';
 
 
 

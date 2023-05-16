@@ -1,0 +1,63 @@
+.ImgAdd{
+    width:400px;
+    height:550px;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:45px;
+    margin-right:45px;
+}
+
+.AddPostPage_rightcomponent{
+    height: 500px;
+    width: 400px;
+    border: 1px solid #4d0000 ;
+    margin-left:100px;
+    margin-right:280px;
+    margin-top:20px;
+    margin-bottom:20px;
+    text-align:center;
+    background-color:#faf9c5;
+    border-radius:  5px;
+  
+   
+
+}
+.headh2{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.headh4{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+
+}
+.Price{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 200px;
+
+}
+
+
+
+
+.btn{
+    background-color:#4d0000;
+    color:white;
+    text-align: center;
+    text-indent: 1px;
+    margin-top:40px;
+    margin-left:40px;
+    margin-right:64px;
+    font-size: 16px;
+    border-color: #4d0000;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    
+}
