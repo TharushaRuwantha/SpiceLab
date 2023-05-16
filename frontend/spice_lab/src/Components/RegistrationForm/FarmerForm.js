@@ -27,7 +27,7 @@ function FarmerRegForm(){
                     <input type="password" class="form-control" id="inputPassword4" placeholder="xxxxxxxxxx" required/>
             </div><div className="col-sm-4">
                     <div className="formText"> Confirm Password</div>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="xxxxxxxxxx" required/>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="xxxxxxxxxx" required/>
             </div>
             <div className="col-sm-4">
                 <div className="formText">Zip Code</div>
