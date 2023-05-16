@@ -21,18 +21,7 @@ function ProductAddToCart(){
                 <div class="col">
                    <img src={chili_image} class="ImgAdd"/>
 
-                   {/* <div class="col">
-                      <div class="row">
-                        <button type="button" class="btn">Add TO Cart</button>
-                    </div>
-                    <div class="col">
-                    <div class="row">
-                        <button type="button" class="btn">qty</button>
-                    
-                    </div>
-                    </div>
                    
-                   </div> */}
                 </div>
 
                 <div class="col">
@@ -41,22 +30,17 @@ function ProductAddToCart(){
                      <h4  class="headh4">Description</h4>
                      <p class="para"> Chilli is the dried ripe fruit of the genus Capsicum.</p>
                      <h4 class="Price">LKR 15 000.00</h4>
-                    <button type="button" class="btn">Add To Cart</button>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown button
-                        </button>
-                              <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">50</a></li>
-                                    <li><a class="dropdown-item" href="#">10</a></li>
-                                    <li><a class="dropdown-item" href="#">200</a></li>
-                             </ul>
-                    </div>
+                     <button type="button" class="btn">Add To Cart</button>
+                     {/* <button  class="btn"><input  type="text" placeholder="Add Quantity"/></button> */}
+                     <input type="text" class="txt"  placeholder="Add Quantity"/>
+                   
+                     </div>
+                </div>
+                  
                     
                     
 
-                </div>
-                </div>
+                
 
                 </div>
                 </div>
@@ -68,9 +52,9 @@ function ProductAddToCart(){
                 
                 
                 
-                <Grid item x5={3}>
+                {/* <Grid item x5={3}>
 
-                </Grid>
+                </Grid> */}
 
 
 
