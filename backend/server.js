@@ -39,12 +39,13 @@ const farmerRouter = require("./routes/farmers.js");
 app.use("/farmer",farmerRouter);
 
 const expenditureRouter = require("./routes/Expenditures.js");
-
 app.use("/expenditure",expenditureRouter);
 
 const incomeRouter = require("./routes/Incomes.js");
-
 app.use("/incomes",incomeRouter);
+
+const itemRouter = require("./routes/items.js");
+app.use("/item",itemRouter);
 
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
