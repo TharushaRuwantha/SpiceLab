@@ -3,7 +3,7 @@ import React from "react";
 import Grid from '@mui/material/Grid';
 import chili_image from '../../images/chili.jpg';
 
-
+//mekath update kara branch ekak hdla github add krnna oni
 function ProductAddToCart(){
     return(
 
@@ -42,7 +42,16 @@ function ProductAddToCart(){
                      <p class="para"> Chilli is the dried ripe fruit of the genus Capsicum.</p>
                      <h4 class="Price">LKR 15 000.00</h4>
                     <button type="button" class="btn">Add To Cart</button>
-                    <button type="button" class="btn">Quantity</button>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown button
+                        </button>
+                              <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">50</a></li>
+                                    <li><a class="dropdown-item" href="#">10</a></li>
+                                    <li><a class="dropdown-item" href="#">200</a></li>
+                             </ul>
+                    </div>
                     
                     
 

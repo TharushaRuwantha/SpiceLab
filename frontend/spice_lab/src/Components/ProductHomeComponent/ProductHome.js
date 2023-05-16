@@ -7,6 +7,7 @@ import chili_image from '../../images/chili.jpg';
 
 
 
+// meka wens kara ae guthub add krnn oni
 
 function ProductHome(){
 
