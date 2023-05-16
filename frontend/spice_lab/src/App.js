@@ -14,6 +14,7 @@ import ProfileEditPage from './Components/profileeditComponent/profileeditpage';
 import ProductHome from './Components/ProductHomeComponent/ProductHome';
 import BuyingRequest from './Components/buyingRequest/BuyingRequestPage';
 import EditBuyingReq from './Components/editBuyingReqPage/editBuyingPage';
+import ShippingPayment from './Components/PShippingPaymentComponent/ShippingPayment';
 
 
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/profileeditpage" element={<ProfileEditPage/>}/>
           <Route path="/buyingrequest" element={<BuyingRequest/>}/>
           <Route path="/editbuyingpage" element={<EditBuyingReq/>}/>
+          <Route path="/ShippingPayment" element={<ShippingPayment/>}/>
 
 
         </Routes>
