@@ -1,0 +1,60 @@
+.profileeditmainR{   
+    margin-top: 50px;  
+}
+
+.profileeditmainright{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.underprofileRI{
+    margin-bottom: 13px;
+}
+
+.rightside_row_one{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.rightsidetopic{
+    font-size: 19px;
+    font-weight: 700;
+}
+
+/* .mak{
+    border:1px solid black;
+    
+} */
+
+.rightsiderow{
+    margin-top: 18px;
+    margin-left: 20px;
+}
+
+.subhead{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.editprofilepage_textbox{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 270px;
+    margin-top: 7px;
+    
+   
+}
+
+.rightsiderowbtn{
+    margin-top: 40px;
+    margin-left: 20px;
+   margin-right: 20px;
+
+}
+
+.bttn{
+    padding: 0px 0px 0px 50px;
+    
+}
+
