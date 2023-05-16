@@ -8,9 +8,9 @@
     border-radius: 5px;
 }
 
-/* .underprofileR{
-    margin-bottom: 20%;
-} */
+.underprofileRI{
+    margin-bottom: 8px;
+}
 
 .rightside_row_one{
     margin-top: 10px;
@@ -24,10 +24,11 @@
 
 .mak{
     border:1px solid black;
+    
 }
 
 .rightsiderow{
-    margin-top: 20px;
+    margin-top: 18px;
     margin-left: 20px;
 }
 
@@ -44,3 +45,16 @@
     
    
 }
+
+.rightsiderowbtn{
+    margin-top: 40px;
+    margin-left: 20px;
+   margin-right: 20px;
+
+}
+
+.bttn{
+    padding: 0px 0px 0px 50px;
+    
+}
+

@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import "../profileeditComponent/profileeditpagerightside.css";
+import Button from '@mui/material/Button';
 
 function ProfileEditRightSide(){
     return(
@@ -54,20 +55,28 @@ function ProfileEditRightSide(){
                         </div>
                     </div>
 
-                    <div className="row rightsiderow mak">
-                        <div className="col-sm-6 ">
-                            
+                    <div className="row rightsiderowbtn mak">
+                        <div className="col-sm-6"> </div>
+                           
+                       
+                        <div className="col-sm-3 bttn mak ">
+                            <Button variant="contained" style={{backgroundColor: '#4D1003', color: 'white', width: '100px'}}>Cancel</Button>
                         </div>
-                        <div className="col-sm-6 ">
-                            
+                        <div className="col-sm-3 bttn mak ">
+                            <Button variant="contained" style={{backgroundColor: '#4D1003', color: 'white', width: '100px'}}>Update</Button>
                         </div>
                     </div>
-
-                    <div className="row rightside_row_two"></div>
+                    <div className="row  ">
+                        <div className="col-sm-7"></div>
+                        <div className="col-sm-5" style={{color:"black", fontSize:'14px', fontWeight:'600'}}>If you want to <y style={{color:"red"}}>Delete</y> this account? </div>
+ 
+                    </div>
 
                     
 
-                    {/* <div className="row underprofile"></div> */}
+                    
+
+                    <div className="row underprofileRI"></div>
                 </div>
                 <div className="col-sm-1 "></div>
             </div>
