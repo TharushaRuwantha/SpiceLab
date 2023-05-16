@@ -71,10 +71,7 @@ function ProfileEditRightSide(){
                         <div className="col-sm-5" style={{color:"black", fontSize:'14px', fontWeight:'600', marginTop:'10px'}}>If you want to <u style={{color:"red"}}>Delete</u> this account? </div>
  
                     </div>
-
-                    
-
-                    
+ 
 
                     <div className="row underprofileRI"></div>
                 </div>
