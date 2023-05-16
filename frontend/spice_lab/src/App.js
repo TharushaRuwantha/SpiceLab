@@ -14,6 +14,7 @@ import ProfileEditPage from './Components/profileeditComponent/profileeditpage';
 import ProductHome from './Components/ProductHomeComponent/ProductHome';
 import BuyingRequest from './Components/buyingRequest/BuyingRequestPage';
 import EditBuyingReq from './Components/editBuyingReqPage/editBuyingPage';
+import ProductAddToCart from './Components/ProductAddToCartComponent/ProductAddToCart';
 
 import ProductShoppingCart from './Components/ProductShoppingCartComponent/ProductShoppingCart';
 
@@ -40,7 +41,12 @@ function App() {
           <Route path="/profileeditpage" element={<ProfileEditPage/>}/>
           <Route path="/buyingrequest" element={<BuyingRequest/>}/>
           <Route path="/editbuyingpage" element={<EditBuyingReq/>}/>
+
+          <Route path="/ProductAddToCart" element={<ProductAddToCart/>}/>
+
+
           <Route path="/ProductShoppingCart" element={<ProductShoppingCart/>}/>
+
 
           <Route path="/ProductUpdateCart" element={<ProductUpdateCart/>}/>
           <Route path="/ShippingPayment" element={<ShippingPayment/>}/>
