@@ -17,12 +17,19 @@ import ProductAddToCart from './Components/ProductAddToCartComponent/ProductAddT
 import ProductShoppingCart from './Components/ProductShoppingCartComponent/ProductShoppingCart';
 import ShippingPayment from './Components/PShippingPaymentComponent/ShippingPayment';
 import ProductUpdateCart from './Components/ProductUpdateCartComponent/ProductUpdateCart';
+import AddExpenditure from './Components/expensef/AddExpenditure';
+import AllExpenditures from './Components/expensef/AllExpenditures';
+import UpdateExpenditure from './Components/expensef/UpdateExpenditure';
+import AddIncome from './Components/incomef/AddIncome';
+import AllIncomes from './Components/incomef/AllIncomes';
+import UpdateIncome from './Components/incomef/UpdateIncome';
+import Statements from './Components/Statements/Statements';
 
 
 
 
 
-function App() {
+export default function App() {
   return (
     <Router>
       <div>
@@ -44,6 +51,13 @@ function App() {
           <Route path="/ProductShoppingCart" element={<ProductShoppingCart/>}/>
           <Route path="/ProductUpdateCart" element={<ProductUpdateCart/>}/>
           <Route path="/ShippingPayment" element={<ShippingPayment/>}/>
+          <Route path="/expense/add" element={<AddExpenditure />} />
+          <Route path="/expense/list" element={<AllExpenditures />} />
+          <Route path="/expense/update/:id" element={<UpdateExpenditure />} />
+          <Route path="/income/add" element={<AddIncome />} />
+          <Route path="/income/list" element={<AllIncomes />} />
+          <Route path="/income/update/:id" element={<UpdateIncome />} />
+          <Route path="/statement/list" element={<Statements />} />
 
 
 
@@ -54,5 +68,3 @@ function App() {
     
   )
 }
-
-export default App;
