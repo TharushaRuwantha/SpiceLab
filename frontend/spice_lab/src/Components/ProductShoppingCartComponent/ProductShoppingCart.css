@@ -1,0 +1,15 @@
+.card border-primary mb-3 {
+    max-width: 180rem;
+    border-color: #4d0000;
+    padding-right: 10px;
+
+}
+
+ .img-fluid rounded-start {
+    height:100px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    
+}
