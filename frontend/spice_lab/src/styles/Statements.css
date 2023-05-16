@@ -1,0 +1,23 @@
+.statement-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+  
+.statement-card {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 6px rgba(21, 21, 21, 0.1);
+    background-color: #565454;
+}
+  
+.statement-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

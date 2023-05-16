@@ -1,0 +1,48 @@
+.btn-add {
+    background-color: #3374F1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 12px;
+    float: right;
+    cursor: pointer;
+}
+
+.print-button{
+    background-color: #3374F1;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    padding: 8px 16px;
+    float: right;
+    margin-top: 20px;
+    margin-inline: 10px;
+}
+
+.delete-button {
+    background-color: #F9423D;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 13px;
+    border: none;
+    float:right;
+    cursor: pointer;
+}
+
+.update-button {
+    background-color: #F9423D;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 13px;
+    border: none;
+    float:right;
+    cursor: pointer;
+}
+.value-field{
+    text-align:right;
+    float:right;
+}
