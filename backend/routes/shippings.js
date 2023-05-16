@@ -2,7 +2,7 @@
 const router = require("express").Router();
 
 //import student model
-let  shippings= require("../models/shipping");
+let  shipping= require("../models/shipping");
 
 //Insert address details
 //create function
@@ -43,7 +43,7 @@ router.route("/add").post((req,res)=>{
 router.route("/").get((req,res)=>{
     
     //get(read) shipping details from db
-    shipping.find().then((shipping)=>{
+    shipping.find().then((shippings)=>{
         res.json(shippings)
 
     }).catch((err)=>{
