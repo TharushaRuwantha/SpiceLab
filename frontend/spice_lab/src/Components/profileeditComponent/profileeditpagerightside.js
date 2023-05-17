@@ -3,6 +3,8 @@ import "../profileeditComponent/profileeditpagerightside.css";
 import Button from '@mui/material/Button';
 
 function ProfileEditRightSide(){
+    
+
     return(
         <div>
             <div className="row profileeditmainR">
@@ -68,10 +70,9 @@ function ProfileEditRightSide(){
                     </div>
                     <div className="row  ">
                         <div className="col-sm-7"></div>
-                        <div className="col-sm-5" style={{color:"black", fontSize:'14px', fontWeight:'600', marginTop:'10px'}}>If you want to <u style={{color:"red"}}>Delete</u> this account? </div>
+                        <div className="col-sm-5" style={{color:"black", fontSize:'14px', fontWeight:'600', marginTop:'10px'}}>If you want to <Button style={{color:"red"}} >Delete</Button> this account? </div>
  
                     </div>
- 
 
                     <div className="row underprofileRI"></div>
                 </div>
@@ -82,3 +83,6 @@ function ProfileEditRightSide(){
 }
 
 export default ProfileEditRightSide;
+
+
+
