@@ -55,7 +55,9 @@ router.route("/").get((req,res)=>{
 //update shipping detail(use put method for it)
 router.route("/update/:id").put(async (req,res) =>{
     //fetch parameter value
-    let shippingId= req.params.id;
+
+    let userId= req.params.id;
+
     const{fullname,address,country,city,postalcode}=req.body;
 
     //create object
@@ -66,7 +68,8 @@ router.route("/update/:id").put(async (req,res) =>{
         city,
         postalcode
     }
-    const update = await shipping.findByIdAndUpdate(shippingId,updateshipping).then(() =>{
+    const update = await shipping.findByIdAndUpdate(userId,updateshipping).then(() =>{
+
         //If successfully updated
         res.status(200).send({status:"shipping Updted"});
     }).catch((err)=>{
@@ -81,8 +84,9 @@ router.route("/update/:id").put(async (req,res) =>{
 //await for promise request
 router.route("/delete/:id").delete(async(req,res) =>{
     
-    let shippingId = req.params.id;
+    let userId = req.params.id;
 
+    await shipping.findByIdAndDelete(userId).then(() =>{
     await shipping.findByIdAndDelete(shippingId).then(() =>{
         res.status(200).send({status:"shipping deleted"})
     }).catch((err)=>{
@@ -96,9 +100,12 @@ router.route("/delete/:id").delete(async(req,res) =>{
     //get details from Oneshipping
     router.route("/get/:id").get(async(req,res) =>{
         //get shipping id
-        let shippingId  = req.params.id;
-        const shipping =  await shipping.findById(shippingId).then(() =>{
-            res.status(200).send({status:"shipping fetched",shipping:shipping})
+
+        let userId  = req.params.id;
+        const shipping =  await shipping.findById(userId).then(() =>{
+            res.status(200).send({status:"shipping fetched",user:user})
+
+      
         }).catch((err)=>{
             console.log(err);
             //Show error msg in frontend
