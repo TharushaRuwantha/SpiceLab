@@ -1,0 +1,13 @@
+.submit-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-primary{
+    background-color: #3374F1;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}

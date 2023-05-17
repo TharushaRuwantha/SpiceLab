@@ -1,77 +1,88 @@
 const route = require('express').Router();
-const { findByIdAndUpdate } = require('../models/request');
-let Request = require('../models/request');
+const Request = require('../models/request');
 
 route.route('/add').post((req, res) => {
-    const category = req.body.category;
-    const pickup = req.body.pickup;
-    const amount = req.body.amount;
-    const address = req.body.address;
-    const zipcode = req.body.zipcode;
-    const otherNotes = req.body.otherNotes;
+  const { category, pickup, amount, address, zipcode, otherNotes } = req.body;
 
-    const newRequest = new Request({
-        category,
-        pickup,
-        amount,
-        address,
-        zipcode,
-        otherNotes
-    });
+  const newRequest = new Request({
+    category,
+    pickup,
+    amount,
+    address,
+    zipcode,
+    otherNotes
+  });
 
-    newRequest.save().then(() => {
-        res.json("Request Added")
-    }).catch((err) => {
-        console.log(err);
+  newRequest.save()
+    .then(() => {
+      res.json("Request Added");
     })
-
-})
+    .catch((err) => {
+      console.log(err);
+      res.status(500).send({ status: "Error with adding request", error: err.message });
+    });
+});
 
 route.route('/').get((req, res) => {
-    Request.find().then((requests) => {
-        res.json(requests)
-    }).catch((err) => {
-        console.log(err);
+  Request.find()
+    .then((requests) => {
+      res.json(requests);
     })
-})
+    .catch((err) => {
+      console.log(err);
+      res.status(500).send({ status: "Error with fetching requests", error: err.message });
+    });
+});
 
-route.route('/update/:id').put(async (req, res) => {
-    let requestId = req.params.id;
-    const { category, pickup, amount, address, zipcode, otherNotes } = req.body;
-    const updateRequest = {
-        category,
-        pickup,
-        amount,
-        address,
-        zipcode,
-        otherNotes
-    }
-    const update = await Request.findByIdAndUpdate(RequestId, updateRequest).then(() => {
-        res.status(200).send({ status: "Request updated" }).catch((err) => {
-            console.log(err);
-            res.status(500).send({ status: "Error with updating data", error: err.message });
-        })
-    })
-})
+route.route('/update/:id').put((req, res) => {
+  const requestId = req.params.id;
+  const { category, pickup, amount, address, zipcode, otherNotes } = req.body;
+  const updateRequest = {
+    category,
+    pickup,
+    amount,
+    address,
+    zipcode,
+    otherNotes
+  };
 
-route.route('/delete/:id').delete(async (req, res) => {
-    let requestId = req.params.id;
-    await request.findByIdAndDelete(requestId).then(() => {
-        res.status(200).send({ status: "Request deleted" }).catch((err) => {
-            console.log(err.message);
-            res.status(500).send({ status: "Error with deleting request", error: err.message });
-        })
+  Request.findByIdAndUpdate(requestId, updateRequest)
+    .then(() => {
+      res.status(200).send({ status: "Request updated" });
     })
-})
+    .catch((err) => {
+      console.log(err);
+      res.status(500).send({ status: "Error with updating request", error: err.message });
+    });
+});
 
-route.route('/get/:id').get(async (req, res) => {
-    let requestId = req.params.id;
-    const request =await request.findById(requestId).then((request) => {
-        res.status(200).send({ status: "Request fetched", request }).catch((err) => {
-            console.log(err.message);
-            res.status(500).send({ status: "Error with get request", error: err.message });
-        })
+route.route('/delete/:id').delete((req, res) => {
+  const requestId = req.params.id;
+
+  Request.findByIdAndDelete(requestId)
+    .then(() => {
+      res.status(200).send({ status: "Request deleted" });
     })
-})
+    .catch((err) => {
+      console.log(err.message);
+      res.status(500).send({ status: "Error with deleting request", error: err.message });
+    });
+});
+
+route.route('/get/:id').get((req, res) => {
+  const requestId = req.params.id;
+
+  Request.findById(requestId)
+    .then((request) => {
+      if (!request) {
+        return res.status(404).send({ status: "Request not found" });
+      }
+      res.status(200).send({ status: "Request fetched", request });
+    })
+    .catch((err) => {
+      console.log(err.message);
+      res.status(500).send({ status: "Error with fetching request", error: err.message });
+    });
+});
 
 module.exports = route;

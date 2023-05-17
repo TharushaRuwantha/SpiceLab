@@ -29,39 +29,49 @@ function AddNewItemsPageDownPart(){
                                 <div className="col-sm-1">
                                     
                                 </div>
+                                
                                 <div className="col-sm-7 ">
-                                    <div className="row">
-                                        <div className="col-sm-4 addnewitemspagefont ">Full Name</div>
-                                        <div className="col-sm-8 ">
-                                            <input type="text" class="form-controlNYaddnewitems" placeholder=" Type here" required/>
+
+                                    <form>
+                                        <div className="row">
+                                            <div className="col-sm-4 addnewitemspagefont ">Full Name</div>
+                                            <div className="col-sm-8 ">
+                                                <input type="text" class="form-controlNYaddnewitems" placeholder=" Type here" required/>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="row addpagespace">
-                                        <div className="col-sm-4 addnewitemspagefont ">Weight</div>
-                                        <div className="col-sm-8 ">
-                                            <input type="text" class="form-controlNYaddnewitems" placeholder="Type here" required/>
+
+                                        <div className="row addpagespace">
+                                            <div className="col-sm-4 addnewitemspagefont ">Weight</div>
+                                            <div className="col-sm-8 ">
+                                                <input type="text" class="form-controlNYaddnewitems" placeholder="Type here" required/>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="row addpagespace">
-                                        <div className="col-sm-4 addnewitemspagefont">Price</div>
-                                        <div className="col-sm-8 ">
-                                            <input type="text" class="form-controlNYaddnewitems" placeholder="Type here" required/>
+
+                                        <div className="row addpagespace">
+                                            <div className="col-sm-4 addnewitemspagefont">Price</div>
+                                            <div className="col-sm-8 ">
+                                                <input type="text" class="form-controlNYaddnewitems" placeholder="Type here" required/>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="row addpagespace">
-                                        <div className="col-sm-12 addnewitemspagefont ">Description</div>
-                                        <textarea className="form-controlNYaddnewitems addpagespaceA" placeholder="Type here" required></textarea>  
-                                    </div>
-                                    <div className="row addpagespace">
-                                        <div className="col-sm-6"></div>
-                                        <div className="col-sm-3 ">
-                                            <center><Button variant="contained" style={{backgroundColor: '#4D1003', color: 'white', width: '100px'}}>Cancel</Button></center>
-                                        </div> 
-                                        <div className="col-sm-3">
-                                            <center><Button variant="contained" style={{backgroundColor: '#4D1003', color: 'white', width: '100px'}}>Finish</Button></center>
-                                        </div> 
-                                    </div>
+
+                                        <div className="row addpagespace">
+                                            <div className="col-sm-12 addnewitemspagefont ">Description</div>
+                                            <textarea className="form-controlNYaddnewitems addpagespaceA" placeholder="Type here" required></textarea>  
+                                        </div>
+
+                                        <div className="row addpagespace">
+                                            <div className="col-sm-6"></div>
+                                            <div className="col-sm-3 ">
+                                                <center><Button variant="contained" style={{backgroundColor: '#4D1003', color: 'white', width: '100px'}}>Cancel</Button></center>
+                                            </div> 
+                                            <div className="col-sm-3">
+                                                <center><Button variant="contained" style={{backgroundColor: '#4D1003', color: 'white', width: '100px'}}>Finish</Button></center>
+                                            </div> 
+                                        </div>
+
+                                    </form>
                                 </div>
+                                
                             </div>
                         </div>
 

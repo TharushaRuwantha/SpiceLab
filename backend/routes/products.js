@@ -70,7 +70,7 @@ router.route("/update/:id").put(async (req,res) =>{
         //Show erre msg in frontend
         res.status(500).send({status:"Error with updating data"});
     })
- })
+})
     
     
 //Delete

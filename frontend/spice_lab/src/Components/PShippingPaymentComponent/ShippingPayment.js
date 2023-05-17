@@ -49,7 +49,7 @@ function ShippingPayment(){
                             <input type ="date" class="form-control2" id="exampleInputdate" placeholder="Date"></input>
 
                             <input type ="cvv" class="form-control2" id="exampleInputcvv" placeholder="CVV"></input>
-                            <button type="button" class="btn2">Pay</button>
+                            <button type="button" class="btn2" onClick={this.ShippingPayment}>Pay</button>
 
 
                         </div>
