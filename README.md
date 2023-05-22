@@ -17,7 +17,12 @@ exports, attracting foreign attention, and generating employment opportunities.<
   },</p><br>
   
   <p>To Start backend server</p>
-  <p> Run : npm start </p><br>
+   run npm start in terminal
+   
+  ```
+    npm start
+  ```
+  
   <h5>frontend scripts</h5>
   <p>"scripts": {<br>
     "start": "react-scripts start",<br>
@@ -27,4 +32,9 @@ exports, attracting foreign attention, and generating employment opportunities.<
   },</p><br>
   
   <p>To start Client Application</p>
-  <p>Run : npm start </p>
+  run npm start in terminal
+  
+  
+  ```
+    npm start
+  ```
