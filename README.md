@@ -10,6 +10,30 @@ Member 4 - Jinasena M.H.Y.C (IT21041266)<br>
 Description - <p>Analyzing the potential impact of promoting Sri Lanka's spice exports on the country's economy, including the potential for increasing
 exports, attracting foreign attention, and generating employment opportunities.</p>
 
+![1727368862900](https://github.com/user-attachments/assets/c5abe5cf-4dac-4980-9c43-2c92da2b4b32)
+
+![1727368844881](https://github.com/user-attachments/assets/10cd1930-f3c1-4d52-a3e1-f5362abb0b87)
+
+![1727368915543](https://github.com/user-attachments/assets/432f619f-179c-4b09-8cc2-46ed00c67d10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <h5>backend scripts</h5>
 <p>"scripts": {<br>
     "start" : "node server.js",<br>
